@@ -73,12 +73,25 @@ console.log('Q 5: ' + questionFive + ' | A: ' + books);
 
 alert('And that, my friends, is IT! I hope you\'ve enjoyed learning a few stupid things about me. Now B E H O L D my mighty CSS! Come back soon.');
 */
-var questionSix = 'What is my lucky number? Guess between 1 and 10.';
-var answer = prompt(questionSix);
-if (answer == 7) {
-  alert('Woah! You got it!');
-} else if (answer < 7) {
-  alert('Sorry, that\'s too low -- try again :D');
-} else if (answer > 7) {
-  alert('a bit too high! Give it another shot.');
+
+for (var i = 0; i < 4; i++) {
+  var questionSix = 'What is my lucky number? Guess between 1 and 10.';
+  var answer = prompt(questionSix);
+  if (answer == 7) {
+    alert('Woah! You got it!');
+    var answerSix = true;
+    break;
+  } else if (answer < 7) {
+    alert('Sorry, that\'s too low -- try again :D');
+    i + 1;
+  } else if (answer > 7) {
+    alert('a bit too high! Give it another shot.');
+    i + 1;
+  }
+}
+
+if (answerSix) {
+  alert('Congratulations! You\'re a fantastic guesser!');
+} else {
+  alert('Sorry, you didn\'t get it. :( Better luck next time.)');
 }
