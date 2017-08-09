@@ -36,7 +36,7 @@ var faint = prompt(questionThree).toLowerCase();
 if (faint === 'yes' || faint === 'y') {
   alert('That\'s right! It SUCKED! I was in the break room, awake and fine one moment, then the next thing I remember was staring up from the ground at 5 worried coworkers :D');
 } else if (faint === 'no' || faint === 'n') {
-  alert('No! I actually HAVE fainted. And it\s no fun, believe you me!');
+  alert('Wrong! I actually HAVE fainted. And it\s no fun, believe you me!');
 } else {
   alert('You are very naughty -- play by the ruuuuuules!!!');
 }
@@ -71,4 +71,4 @@ if (books === 'yes' || books === 'y') {
 
 console.log('Q 5: ' + questionFive + ' | A: ' + books);
 
-alert('And that, my friends, is IT! I hope you\'ve enjoyed learning a few stupid things about me. Come again soon!');
+alert('And that, my friends, is IT! I hope you\'ve enjoyed learning a few stupid things about me. Now B E H O L D my mighty CSS! Come back soon.');
