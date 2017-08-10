@@ -58,7 +58,7 @@ h2 {
 
 .bio {
   float: left;
-  width: 16em;
+  width: 15em;
   margin-left: .25em;
   margin-top: 0em;
   border-right: 1px solid white;
@@ -98,9 +98,39 @@ h2 {
 li a {
   color: blue;
   text-decoration: none;
-
 }
 
 a:hover {
   color: yellow;
+}
+
+.movies {
+  font-family: sans-serif;
+  float: right;
+  width: 16em;
+  margin-right: -1.5em;
+  margin-top: 0em;
+  background-color: white;
+  color: red;
+}
+
+.moviesHeader {
+  font-size: 1.5em;
+  background-color: #DFDFDF;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  padding: 0.5em;
+  margin: 0;
+  color: black;
+}
+
+blockquote {
+  font-family: monospace;
+  margin: 0.75em;
+  font-style: oblique;
+  color: black;
 }
