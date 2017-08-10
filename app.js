@@ -72,7 +72,6 @@ if (books === 'yes' || books === 'y') {
 console.log('Q 5: ' + questionFive + ' | A: ' + books);
 
 alert('And that, my friends, is IT! I hope you\'ve enjoyed learning a few stupid things about me. Now B E H O L D my mighty CSS! Come back soon.');
-*/
 
 for (var i = 0; i < 4; i++) {
   var questionSix = 'What is my lucky number? Guess between 1 and 10.';
@@ -82,16 +81,33 @@ for (var i = 0; i < 4; i++) {
     var answerSix = true;
     break;
   } else if (answer < 7) {
-    alert('Sorry, that\'s too low -- try again :D');
-    i + 1;
+    alert('Sorry, that\'s too low :D');
   } else if (answer > 7) {
-    alert('a bit too high! Give it another shot.');
-    i + 1;
+    alert('A bit too high!');
   }
 }
 
+console.log('Q 6: ' + questionSix + ' | A: ' + answer);
+
 if (answerSix) {
-  alert('Congratulations! You\'re a fantastic guesser!');
+  alert('Congratulations! You\'re fantastic at guessing!!!!');
 } else {
-  alert('Sorry, you didn\'t get it. :( Better luck next time.)');
+  alert('Sorry, you didn\'t get it. :( Better luck next time.');
 }
+*/
+for (var i = 0; i < 6; i++) {
+  var questionSeven = 'Guess my favorite food.';
+  var answer = prompt(questionSeven);
+  var food;
+  food = ['spagetti', 'pizza', 'coffee', 'noodles', 'fruit', 'veggies'];
+
+  if (food.includes(answer.toLowerCase())) {
+    alert('WOW! That\'s right! Good job.');
+    var answerSeven = true;
+    break;
+  } else {
+    alert('Sorry, that\'s not one of my favorites :(');
+  }
+}
+
+console.log('Q 7: ' + questionSeven + ' | A: ' + answer);
