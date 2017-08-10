@@ -6,7 +6,7 @@ var name = prompt('Please give you your name.');
 alert('Ok, -- time to answer some questions about ME!');
 alert('Now on to Question 1!');
 
-function qOne(){
+function qOne() {
   var questionOne = 'Have I ever jumped from a roof?';
   var roof = prompt(questionOne).toLowerCase();
   if (roof === 'yes' || roof === 'y') {
@@ -17,13 +17,11 @@ function qOne(){
   } else {
     alert('You are very naughty -- play by the ruuuuuules!!!');
   }
+  console.log('Q 1: ' + questionOne + ' | A: ' + roof);
 }
 
-console.log('Q 1: ' + questionOne + ' | A: ' + roof);
-
-alert('Ok -- on to QUESTION 2!');
-
-function qTwo (){
+function qTwo () {
+  alert('Ok -- on to QUESTION 2!');
   var questionTwo = 'Have I ever been arrested before?';
   var arrested = prompt(questionTwo).toLowerCase();
   if (arrested === 'yes' || arrested === 'y') {
@@ -34,13 +32,11 @@ function qTwo (){
   } else {
     alert('You are very naughty -- play by the ruuuuuules!!!');
   }
+  console.log('Q 2: ' + questionTwo + ' | A: ' + arrested);
 }
 
-console.log('Q 2: ' + questionTwo + ' | A: ' + arrested);
-
-alert('Now on to QUESTION 3!!');
-
 function qThree() {
+  alert('Now on to QUESTION 3!!');
   var questionThree = 'Have I ever fainted at work?';
   var faint = prompt(questionThree).toLowerCase();
   if (faint === 'yes' || faint === 'y') {
@@ -51,13 +47,11 @@ function qThree() {
   } else {
     alert('You are very naughty -- play by the ruuuuuules!!!');
   }
+  console.log('Q 3: ' + questionThree + ' | A: ' + faint);
 }
 
-console.log('Q 3: ' + questionThree + ' | A: ' + faint);
-
-alert('Alright! Here comes QUESTION NUMERO QUATRO (that means number 4)!!!');
-
 function qFour() {
+  alert('Alright! Here comes QUESTION NUMERO QUATRO (that means number 4)!!!');
   var questionFour = 'Have I ever been outside the continental US?';
   var outsideTheUS = prompt(questionFour).toLowerCase();
   if (outsideTheUS === 'yes' || outsideTheUS === 'y') {
@@ -68,13 +62,11 @@ function qFour() {
   } else {
     alert('You are very naughty -- play by the ruuuuuules!!!');
   }
+  console.log('Q 4: ' + questionFour + ' | A: ' + outsideTheUS);
 }
 
-console.log('Q 4: ' + questionFour + ' | A: ' + outsideTheUS);
-
-alert('QUESTION NUMBER 5!!!!!!!1!11!!1');
-
 function qFive() {
+  alert('QUESTION NUMBER 5!!!!!!!1!11!!1');
   var questionFive = 'Have I ever read 2 books in one day?';
   var books = prompt(questionFive).toLowerCase();
   if (books === 'yes' || books === 'y') {
@@ -85,13 +77,11 @@ function qFive() {
   } else {
     alert('You are very naughty -- play by the ruuuuuules!!!');
   }
+  console.log('Q 5: ' + questionFive + ' | A: ' + books);
 }
 
-console.log('Q 5: ' + questionFive + ' | A: ' + books);
-
-alert('How about answering Question 6, ' + name + '?');
-
 function qSix() {
+  alert('How about answering Question 6, ' + name + '?');
   for (var i = 0; i < 4; i++) {
     var questionSix = 'What is my lucky number? Guess between 1 and 10.';
     var answer = prompt(questionSix);
@@ -106,19 +96,16 @@ function qSix() {
       alert('A bit too high!');
     }
   }
+  console.log('Q 6: ' + questionSix + ' | A: ' + answer);
+  if (answerSix) {
+    alert('Congratulations! You\'re fantastic at guessing!!!!');
+  } else {
+    alert('Sorry, you didn\'t get it. :( Better luck next time.');
+  }
 }
-
-console.log('Q 6: ' + questionSix + ' | A: ' + answer);
-
-if (answerSix) {
-  alert('Congratulations! You\'re fantastic at guessing!!!!');
-} else {
-  alert('Sorry, you didn\'t get it. :( Better luck next time.');
-}
-
-alert(name + '! You\'ve gotten this far! :D Might as well try to answer QUESTION 7!!');
 
 function qSeven() {
+  alert(name + '! You\'ve gotten this far! :D Might as well try to answer QUESTION 7!!');
   for (var i = 0; i < 6; i++) {
     var questionSeven = 'Guess my favorite food.';
     var answer = prompt(questionSeven);
@@ -134,14 +121,13 @@ function qSeven() {
       alert('Sorry, that\'s not one of my favorites :(');
     }
   }
-}
+  console.log('Q 7: ' + questionSeven + ' | A: ' + answer);
 
-console.log('Q 7: ' + questionSeven + ' | A: ' + answer);
-
-if (answerSeven) {
-  alert('Congrats on getting the right answer! Any of these choices would have been right: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
-} else {
-  alert('WRONG! :D The answer you SHOULD have given was one of these: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
+  if (answerSeven) {
+    alert('Congrats on getting the right answer! Any of these choices would have been right: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
+  } else {
+    alert('WRONG! :D The answer you SHOULD have given was one of these: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
+  }
 }
 
 qOne();
