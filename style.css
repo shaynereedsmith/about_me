@@ -55,3 +55,12 @@ h2 {
   font-family: monospace;
   color: gray;
 }
+
+.bio {
+  display: inline-block;
+  background-color: blue;
+  width: 14em;
+  margin-left: -1em;
+  margin-top: 5em;
+  padding: 1em;
+}
