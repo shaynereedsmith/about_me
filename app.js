@@ -144,5 +144,13 @@ if (answerSeven) {
   alert('WRONG! :D The answer you SHOULD have given was one of these: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
 }
 
+qOne();
+qTwo();
+qThree();
+qFour();
+qFive();
+qSix();
+qSeven();
+
 alert('You finished! Your final score is ' + total + '/7!!');
 console.log('Final score: ' + total + '/7');
