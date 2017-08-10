@@ -127,7 +127,7 @@ console.log('Q 7: ' + questionSeven + ' | A: ' + answer);
 if (answerSeven) {
   alert('Congrats on getting the right answer! Any of these choices would have been right: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
 } else {
-  alert('WRONG! :D The answer you SHOULD have given was one of these: ' + food);
+  alert('WRONG! :D The answer you SHOULD have given was one of these: ' + food[0] + ', ' + food[1] + ', ' + food[2] + ', ' + food[3] + ', ' + food[4] + ', and ' + food[5] + '.');
 }
 
 alert('You finished! Your final score is ' + total + '/7!!');
