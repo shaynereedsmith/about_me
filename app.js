@@ -6,30 +6,34 @@ var name = prompt('Please give you your name.');
 alert('Ok, -- time to answer some questions about ME!');
 alert('Now on to Question 1!');
 
-var questionOne = 'Have I ever jumped from a roof?';
-var roof = prompt(questionOne).toLowerCase();
-if (roof === 'yes' || roof === 'y') {
-  alert('Correct! I have.');
-  total++;
-} else if (roof === 'no' || roof === 'n') {
-  alert('Sorry, wrong -- but I was actually insane as a child. I actually have jumped from a roof');
-} else {
-  alert('You are very naughty -- play by the ruuuuuules!!!');
+function qOne(){
+  var questionOne = 'Have I ever jumped from a roof?';
+  var roof = prompt(questionOne).toLowerCase();
+  if (roof === 'yes' || roof === 'y') {
+    alert('Correct! I have.');
+    total++;
+  } else if (roof === 'no' || roof === 'n') {
+    alert('Sorry, wrong -- but I was actually insane as a child. I actually have jumped from a roof');
+  } else {
+    alert('You are very naughty -- play by the ruuuuuules!!!');
+  }
 }
 
 console.log('Q 1: ' + questionOne + ' | A: ' + roof);
 
 alert('Ok -- on to QUESTION 2!');
 
-var questionTwo = 'Have I ever been arrested before?';
-var arrested = prompt(questionTwo).toLowerCase();
-if (arrested === 'yes' || arrested === 'y') {
-  alert('Nope! I\'m a good boy.');
-} else if (arrested === 'no' || arrested === 'n'){
-  alert('That\'s right! Stay out of jail, kids');
-  total++;
-} else {
-  alert('You are very naughty -- play by the ruuuuuules!!!');
+function qTwo (){
+  var questionTwo = 'Have I ever been arrested before?';
+  var arrested = prompt(questionTwo).toLowerCase();
+  if (arrested === 'yes' || arrested === 'y') {
+    alert('Nope! I\'m a good boy.');
+  } else if (arrested === 'no' || arrested === 'n'){
+    alert('That\'s right! Stay out of jail, kids');
+    total++;
+  } else {
+    alert('You are very naughty -- play by the ruuuuuules!!!');
+  }
 }
 
 console.log('Q 2: ' + questionTwo + ' | A: ' + arrested);
