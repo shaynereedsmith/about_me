@@ -29,6 +29,13 @@ h2 {
   color: white;
 }
 
+.body {
+  box-sizing: border-box;
+  width: 60%;
+  margin: auto;
+  /*border: 1px solid white;*/
+}
+
 .info {
   position: relative;
   top: -1em;
@@ -62,13 +69,10 @@ h2 {
 .bio {
   box-sizing: border-box;
   float: left;
-  width: 15em;
-  margin-left: .25em;
-  margin-top: 0em;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  width: 35%;
+  margin: 0;
+  border: 1px solid white;
   background-color: #0080D5;
-  margin-bottom: 0em;
 }
 
 .bioheader {
@@ -86,7 +90,6 @@ h2 {
   color: white;
   font-size: 1.50em;
 }
-
 
 .nav {
   text-align: center;
@@ -112,9 +115,8 @@ a:hover {
 .movies {
   font-family: sans-serif;
   float: right;
-  width: 16em;
-  margin-right: -1.5em;
-  margin-top: 0em;
+  width: 65%;
+  margin: 0;
   background-color: white;
   color: red;
 }
@@ -127,9 +129,10 @@ a:hover {
   margin: 0;
 }
 
-blockquote {
+.movies blockquote {
   font-family: monospace;
   margin: 0.75em;
   font-style: oblique;
   color: black;
+  border: 1px solid white;
 }
