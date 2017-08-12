@@ -1,11 +1,24 @@
 'use strict';
+
+//this variable will keep score
 var total = 0;
 
+//start of game
 alert('Hey there. I hope you are well today :D');
 var name = prompt('Please give you your name.');
-alert('Ok, -- time to answer some questions about ME!');
-alert('Now on to Question 1!');
+alert('Ok, ' + name + ', time to answer some questions. I hope you\'re ready.');
+alert('Question 1!');
 
+//loading question function calls
+qOne();
+qTwo();
+qThree();
+qFour();
+qFive();
+qSix();
+qSeven();
+
+//first question.
 function qOne() {
   var questionOne = 'Have I ever jumped from a roof?';
   var roof = prompt(questionOne).toLowerCase();
@@ -20,8 +33,9 @@ function qOne() {
   console.log('Q 1: ' + questionOne + ' | A: ' + roof);
 }
 
+//second question
 function qTwo () {
-  alert('Ok -- on to QUESTION 2!');
+  alert('QUESTION 2!');
   var questionTwo = 'Have I ever been arrested before?';
   var arrested = prompt(questionTwo).toLowerCase();
   if (arrested === 'yes' || arrested === 'y') {
@@ -35,6 +49,7 @@ function qTwo () {
   console.log('Q 2: ' + questionTwo + ' | A: ' + arrested);
 }
 
+//third question
 function qThree() {
   alert('Now on to QUESTION 3!!');
   var questionThree = 'Have I ever fainted at work?';
@@ -50,8 +65,9 @@ function qThree() {
   console.log('Q 3: ' + questionThree + ' | A: ' + faint);
 }
 
+//fourth question
 function qFour() {
-  alert('Alright! Here comes QUESTION NUMERO QUATRO (that means number 4)!!!');
+  alert('Alright! Here comes QUESTION NUMERO QUATTRO (that means number 4)!!!');
   var questionFour = 'Have I ever been outside the continental US?';
   var outsideTheUS = prompt(questionFour).toLowerCase();
   if (outsideTheUS === 'yes' || outsideTheUS === 'y') {
@@ -65,6 +81,7 @@ function qFour() {
   console.log('Q 4: ' + questionFour + ' | A: ' + outsideTheUS);
 }
 
+//fifth question
 function qFive() {
   alert('QUESTION NUMBER 5!!!!!!!1!11!!1');
   var questionFive = 'Have I ever read 2 books in one day?';
@@ -80,6 +97,7 @@ function qFive() {
   console.log('Q 5: ' + questionFive + ' | A: ' + books);
 }
 
+//sixth question
 function qSix() {
   alert('How about answering Question 6, ' + name + '?');
   for (var i = 0; i < 4; i++) {
@@ -104,6 +122,7 @@ function qSix() {
   }
 }
 
+//seventh question
 function qSeven() {
   alert(name + '! You\'ve gotten this far! :D Might as well try to answer QUESTION 7!!');
   for (var i = 0; i < 6; i++) {
@@ -130,13 +149,8 @@ function qSeven() {
   }
 }
 
-qOne();
-qTwo();
-qThree();
-qFour();
-qFive();
-qSix();
-qSeven();
-
+//end of game
 alert('You finished! Your final score is ' + total + '/7!!');
 console.log('Final score: ' + total + '/7');
+
+alert('Thanks for playing my little guessing game. Please enjoy the rest of my page.');
