@@ -122,7 +122,7 @@ function qSix() {
   }
 }
 
-//seventh question
+//seventh question 
 function qSeven() {
   alert(name + '! You\'ve gotten this far! :D Might as well try to answer QUESTION 7!!');
   for (var i = 0; i < 6; i++) {
